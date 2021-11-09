@@ -22,7 +22,7 @@ fetch('https://qxjpbef.cluster030.hosting.ovh.net/players?teams.short_name=sm1')
             container.innerHTML += `
             <div class="block-joueur row">
                 <div class="joueur col-4">
-                    <img src=" http://qxjpbef.cluster030.hosting.ovh.net${players.image.formats.medium.url}" alt="">
+                    <img src="http://qxjpbef.cluster030.hosting.ovh.net${players.image.formats.medium.url}" alt="">
                     <div class="joueur-texte">
                         <h3>${players.number}</h3>
                         <strong>
