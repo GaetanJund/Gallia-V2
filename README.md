@@ -1,1 +1,1 @@
-# Gallia-V2
+V2 avec fichiers MAJ pour projet Gallia
