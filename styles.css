@@ -225,7 +225,6 @@ article{
 
 /* Footer */
 footer{
-    background-color: #eaeded;
     display: flex;
     justify-content: space-around;
     text-align: left;
