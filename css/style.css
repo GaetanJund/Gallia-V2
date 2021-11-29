@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f3f3f3;
+  animation: loader 0.01s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.loader_animation {
+  width: 50%;
+  height: 100%;
+  animation: zoom 1s;
+}
+
+/* Header et Navigation */
+.header {
+  font-size: large;
+  font-weight: bold;
+  border-bottom: 5px solid black;
+}
+
+.logo {
+  display: flex;
+  margin-left: 100px;
+}
+
+h1 {
+  color: #076239;
+  margin-left: 50px;
+}
+
+nav {
+  width: 100%;
+  margin-top: -30px;
+}
+
+nav > ul {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 221px;
+}
+
+nav > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  float: left;
+  position: relative;
+}
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: black;
+}
+
+.sous {
+  display: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #bebbbb;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav li:hover .sous {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+  width: 200px;
+  background-color: #eaeded;
+}
+
+.deroulant a {
+  color: #076239;
+}
+
+.sous li {
+  border-bottom: 5px solid #d7d8d8;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.sous li:hover {
+  background-color: #d7d8d8;
+}
+
+.sous li a {
+  padding: 15px 30px;
+  font-size: 13px;
+  color: black;
+  width: 270px;
+}
+
+/* Home Page */
+/* Actus */
+.actualites {
+  background-color: #e5e8e8;
+  margin-top: -20px;
+  padding-bottom: 40px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.actualites h2 {
+  padding-top: 25px;
+  margin-left: 15px;
+  border-bottom: 2px solid #076239;
+  width: 18.5%;
+}
+
+.last-actu {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-direction: row;
+}
+
+.actu {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 10px #bebbbb;
+  width: 350px;
+}
+
+.actu img {
+  height: 160px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+h3 {
+  color: #076239;
+}
+
+/* Matchs SM1 */
+.matchs-sm1 {
+  background-color: black;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+
+.matchs-sm1 h2 {
+  padding-top: 25px;
+  margin-left: 15px;
+  color: white;
+  width: 11.7%;
+}
+
+.matchs-sm1 h3 {
+  margin-left: 10px;
+}
+
+.last-match {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-direction: row;
+}
+
+.dernier-match {
+  margin-bottom: 25px;
+}
+
+.annonce {
+  display: flex;
+}
+
+.annonce img {
+  max-height: 180px;
+}
+
+.stats {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.stats a:hover {
+  background-color: #f5c245;
+  border: 2px solid #076239;
+  transition-duration: 0.3s;
+}
+
+.actu a {
+  background-color: #076239;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.actu p {
+  text-align: center;
+}
+
+/* Matchs we */
+.matchs-we {
+  background-color: #e5e8e8;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+
+.matchs-we h2 {
+  padding-top: 25px;
+  margin-left: 15px;
+  width: 16%;
+}
+
+.matchs-we h3 {
+  margin-left: 10px;
+}
+
+.we-matchs {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-direction: row;
+}
+
+.domicile, .exterieur {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 10px #bebbbb;
+  width: 350px;
+}
+
+.matchs-we p {
+  text-align: center;
+}
+
+.matchs-equipe {
+  margin-top: -10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #076239;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-adresse p, .contact-telephone p, .contact-mail p {
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.fa-map-marker-alt, .fa-phone, .fa-envelope-square, .fa-clock, .fa-calendar-alt {
+  color: #076239;
+}
+
+.reseaux-photo a {
+  padding-left: 20px;
+}
+
+.fa-facebook-square, .fa-instagram-square, .fa-dribbble-square {
+  color: #5b5b5b;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+.fa-facebook-square:hover, .fa-instagram-square:hover, .fa-dribbble-square:hover {
+  color: #f5c245;
+  transition-duration: 0.3s;
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+@keyframes loader2 {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes past {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+.loader2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f3f3f3;
+  animation: loader 0.01s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.loader2_animation {
+  width: 50%;
+  height: 100%;
+  animation: past 1s;
+}
+
+/* Page équipe NM3 */
+.equipe-nm3 {
+  text-align: center;
+  border-bottom: 5px solid black;
+  padding-bottom: 50px;
+}
+.equipe-nm3 h2 {
+  text-align: center;
+  margin-top: 25px;
+  text-shadow: 10px 10px 10px;
+}
+
+.equipe-nm3 img {
+  height: 500px;
+  margin-top: 25px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 10px #bebbbb;
+}
+
+.titre-nm3 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-shadow: 10px 10px 10px;
+}
+
+.block-joueur {
+  display: inline-block;
+  text-align: left;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.players {
+  border-bottom: 5px solid black;
+}
+
+.joueur {
+  height: 500px;
+  margin-bottom: 80px;
+  padding: 10px;
+}
+
+.joueur img {
+  width: 100%;
+  height: 420px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 1px 1px 10px #bebbbb;
+}
+
+.joueur-texte {
+  width: 100%;
+  background-color: #f2f4f4;
+  text-align: center;
+  padding-bottom: 4px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 1px 1px 10px #bebbbb;
+}
+
+.joueur-texte h3 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.calendrier {
+  padding: 20px;
+  border-bottom: 5px solid black;
+}
+
+.calendrier img {
+  width: 10%;
+  height: 200px;
+}
+
+/* Page équipe Autre */
+.equipe {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-direction: row;
+  border-bottom: 5px solid black;
+  background-color: #f2f4f4;
+}
+
+.photo-equipe {
+  text-align: center;
+}
+
+.photo-equipe img {
+  height: 500px;
+  margin-top: 25px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 10px #bebbbb;
+}
+
+.photo-equipe h2 {
+  text-align: center;
+  margin-top: 25px;
+  text-shadow: 10px 10px 10px;
+}
+
+.titre-equipe {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-shadow: 10px 10px 10px;
+}
+
+.effectif-equipe-autre {
+  background-color: #e5e8e8;
+  box-shadow: 1px 1px 10px #bebbbb;
+  width: 15%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px 10px 10px 10px;
+  display: inline-block;
+  text-align: left;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.effectif-equipe-autre h3 {
+  font-size: 20px;
+}
+
+.effectif-equipe-autre p {
+  margin-left: 20px;
+}
+
+/* Devenir partenaire */
+.devenir-partenaire {
+  background-color: #f2f4f4;
+  border-bottom: 5px solid black;
+  margin-top: -30px;
+}
+.devenir-partenaire .texte {
+  margin: 30px;
+  padding-top: 20px;
+}
+.devenir-partenaire p {
+  font-size: 20px;
+}
+.devenir-partenaire p strong {
+  color: #076239;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -6,8 +6,8 @@ fetch('https://qxjpbef.cluster030.hosting.ovh.net/teams?short_name=sm1')
         let container = document.querySelector("#NM3 .row");
         data.forEach(nm3 => {
             container.innerHTML += `
-            <div class="photo-equipe-nm3 col-12">
-                <h2>${nm3.division}, Poule ${nm3.group}</h2>
+            <div class="equipe-nm3">
+                <h2>${nm3.division} </br> Poule ${nm3.group}</h2>
                 <img src=" http://qxjpbef.cluster030.hosting.ovh.net${nm3.image.formats.medium.url}" alt="photo-equipe-sm1">
             </div>`;
         })
@@ -20,8 +20,8 @@ fetch('https://qxjpbef.cluster030.hosting.ovh.net/players?teams.short_name=sm1')
         let container = document.querySelector("#NM3 .players");
         data.forEach(players => {
             container.innerHTML += `
-            <div class="block-joueur row">
-                <div class="joueur col-4">
+            <div class="block-joueur">
+                <div class="joueur">
                     <img src="http://qxjpbef.cluster030.hosting.ovh.net${players.image.formats.medium.url}" alt="">
                     <div class="joueur-texte">
                         <h3>${players.number}</h3>

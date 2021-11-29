@@ -11,7 +11,7 @@ fetch('https://qxjpbef.cluster030.hosting.ovh.net/teams?short_name=sm2')
         let container = document.querySelector("#Equipe .row");
         data.forEach(team => {
             container.innerHTML += `
-            <div class="photo-equipe col-12">
+            <div class="photo-equipe">
                 <h2>${team.division}, Poule ${team.group}</h2>
                 <img src="" alt="photo-equipe-sm2">
             </div>`;
@@ -26,7 +26,7 @@ fetch('https://qxjpbef.cluster030.hosting.ovh.net/players?teams.short_name=sm2')
         data.forEach(players => {
             container.innerHTML += `
         <div class="effectif-equipe-autre">
-            <h3>${players.number}</h3>
+            <h3>${players.number} <i class="fas fa-arrow-circle-down"></i></h3>
             <p>${players.lastname} ${players.firstname}</p>
         </div>`;
         })

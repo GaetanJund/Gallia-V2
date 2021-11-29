@@ -1,0 +1,22 @@
+{
+  "name": "gallia-v2",
+  "version": "1.0.0",
+  "description": "V2 avec fichiers MAJ pour projet Gallia",
+  "main": "home.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaetanJund/Gallia-V2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaetanJund/Gallia-V2/issues"
+  },
+  "homepage": "https://github.com/GaetanJund/Gallia-V2#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

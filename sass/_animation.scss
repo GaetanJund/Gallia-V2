@@ -1,0 +1,41 @@
+@keyframes loader{
+    100%{
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+@keyframes zoom{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+@keyframes loader2{
+  100%{
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes past{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}

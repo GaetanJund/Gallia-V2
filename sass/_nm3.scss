@@ -1,0 +1,85 @@
+// Loader 2
+.loader2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f3f3f3;
+    animation: loader .01s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    &_animation{
+        width: 50%;
+        height: 100%;
+        animation: past 1s;
+    }
+}
+
+/* Page équipe NM3 */
+.equipe-nm3{
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 50px;
+    h2{
+        text-align: center;
+        margin-top: 25px;
+        text-shadow: 10px 10px 10px;
+    }
+}
+.equipe-nm3 img{
+    height: 500px;
+    margin-top: 25px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+}
+.titre-nm3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: 10px 10px 10px;
+}
+.block-joueur{
+    display: inline-block;
+    text-align: left;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-left: 10px;
+}
+.players{
+    border-bottom: 5px solid black;
+}
+.joueur{
+    height: 500px;
+    margin-bottom: 80px;
+    padding: 10px;
+}
+.joueur img{
+    width: 100%;
+    height: 420px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+}
+.joueur-texte{
+    width: 100%;
+    background-color: #f2f4f4;
+    text-align: center;
+    padding-bottom: 4px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+}
+.joueur-texte h3{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.calendrier{
+    padding: 20px;
+    border-bottom: 5px solid black;
+}
+.calendrier img{
+    width: 10%;
+    height: 200px;
+}

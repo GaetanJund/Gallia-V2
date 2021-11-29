@@ -20,8 +20,8 @@ header.innerHTML += `
                         </li>
                         <li class="deroulant"><a href="">Masculins</a> |
                             <ul class="sous">
-                                <li><a href="../equipes/template-equipe.html">Régionale 2</a></li>
-                                <li><a href="../equipes-masculines/pre-region.html">Pré-Région</a></li>
+                                <li><a href="../equipes/template-sm2.html">Régionale 2</a></li>
+                                <li><a href="../equipes/template-sm3.html">Pré-Région</a></li>
                                 <li><a href="../equipes-masculines/departementale3.html">Départementale 3</a></li>
                                 <li><a href="../equipes-masculines/u20.html">U20 Région</a></li>
                             </ul>
@@ -42,7 +42,7 @@ header.innerHTML += `
                         </li>
                         <li class="deroulant"><a href="">Partenaires</a>
                             <ul class="sous">
-                                <li><a href="../partenaires/devenir-partenaire.html">Devenir partenaire</a></li>
+                                <li><a href="../partenaires/template-devenir-partenaire.html">Devenir partenaire</a></li>
                                 <li><a href="../partenaires/partenaires.html">Nos partenaires</a></li>
                                 <li><a href="../partenaires/club-affaires.html">Club Affaires Gallia</a></li>
                             </ul>
