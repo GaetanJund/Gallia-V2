@@ -22,8 +22,8 @@ header.innerHTML += `
                             <ul class="sous">
                                 <li><a href="../equipes/template-sm2.html">Régionale 2</a></li>
                                 <li><a href="../equipes/template-sm3.html">Pré-Région</a></li>
-                                <li><a href="../equipes-masculines/departementale3.html">Départementale 3</a></li>
-                                <li><a href="../equipes-masculines/u20.html">U20 Région</a></li>
+                                <li><a href="../equipes/template-sm4.html">Départementale 3</a></li>
+                                <li><a href="../equipes/template-u20.html">U20 Région</a></li>
                             </ul>
                         </li>
                         <li class="deroulant"><a href="">Féminines</a> |

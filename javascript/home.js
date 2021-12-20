@@ -117,3 +117,98 @@ matchs_we.innerHTML += `
             </section>
         </div>
     </div>`
+
+
+
+
+// ********************** Fonctionnement avec un backend ***************************
+// ********* Exemple avec les 3 dernières actualités
+// fetch('https://qxjpbef.cluster030.hosting.ovh.net/home')
+//     .then(response => response.json())
+//     .then(data => {
+//         let actualité = document.querySelector(".home-actu");
+//         data.forEach(home => {
+//             actualité.innerHTML += `<div class="actualites">
+// <h2>Les Dernières Actualités</h2>
+// <div class="last-actu row">
+//     <section class="col-4">
+//         <article class="actu">
+//             <div>
+//                 <img src="https://qxjpbef.cluster030.hosting.ovh.net/home?actu=1" alt="img_actu1">
+//             </div>
+//             <div>
+//                 <h3>${home.title-1}</h3>
+//                 <p>${home.text-1}</p>
+//         </article>
+//     </section>
+//     <section class="col-4">
+//         <article class="actu">
+//             <div>
+//                 <img src="https://qxjpbef.cluster030.hosting.ovh.net/home?actu=2" alt="img_actu1">
+//             </div>
+//             <div>
+//                 <h3>${home.title-2}</h3>
+//                 <p>${home.text-2}</p>
+//         </article>
+//     </section>
+//     <section class="col-4">
+//         <article class="actu">
+//             <div>
+//                 <img src="https://qxjpbef.cluster030.hosting.ovh.net/home?actu=3" alt="img_actu1">
+//             </div>
+//             <div>
+//                 <h3>${home.title-3}</h3>
+//                 <p>${home.text-3}</p>
+//         </article>
+//     </section>
+// </div>
+// </div>
+// `;
+//     });
+
+// ******** Exemple avec matchs sm1
+// fetch('https://qxjpbef.cluster030.hosting.ovh.net/home')
+//     .then(response => response.json())
+//     .then(data => {
+//         let matchs_sm1 = document.querySelector(".matchs-sm1");
+//         data.forEach(matchs-sm1 => {
+//             matchs_sm1.innerHTML += `
+{/* <div class="matchs-sm1">
+        <h2>Matchs des SM1</h2>
+        <div class="last-match">
+            <section>
+                <article class="actu">
+                    <div class="dernier-match">
+                        <h3>Dernier Match</h3>
+                        <p><i class="fas fa-calendar-alt"></i> ${matchs-sm1.date-lastgame} | <i class="fas fa-clock"></i>
+                            ${matchs-sm1.hour-lastgame}</p>
+                        <strong>
+                            <p>${matchs-sm1.score-lastgame}</p>
+                        </strong>
+                        <div class="annonce">
+                            A REMPLACER <img src="images/nancy.png" alt=""><img src="images/logo/logo-sans-fond.png" alt="">
+                        </div>
+                        <div class="stats">
+                            <a
+                                href="${matchs-sm1.stats}>Statistiques</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article class="actu">
+                    <div class="prochain-match">
+                        <h3>Prochain Match</h3>
+                        <p> <i class="fas fa-calendar-alt"></i> ${matchs-sm1.date-nextgame} | <i class="fas fa-clock"></i>
+                            ${matchs-sm1.hour-nextgame}</p>
+                        <p>${matchs-sm1.division}</p>
+                        <div class="annonce">
+                            A REMPLACER <img src="images/sig.png" alt=""><img src="images/logo/logo-sans-fond.png" alt="">
+                        </div> <br />
+                        <p>${matchs-sm1.place}</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>`;
+}); */}
